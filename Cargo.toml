@@ -1,0 +1,10 @@
+[package]
+name = "poem_openapi_sandbox"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+poem = "1.2"
+#In the real world, we'd only have one ui feature
+poem-openapi = { version = "1.2", features = ["swagger-ui","rapidoc","redoc"] }
+tokio = { version = "1", features = ["macros","rt-multi-thread"] }
